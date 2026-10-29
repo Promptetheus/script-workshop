@@ -1,0 +1,95 @@
+{
+  "id": "20261029-010536-word-frequency-analyzer-e8795b",
+  "name": "word-frequency-analyzer",
+  "model": "Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+  "engine_mode": "builtin",
+  "language": "shell",
+  "topic": "text analysis",
+  "contract": {
+    "name": "word-frequency-analyzer",
+    "summary": "Analyzes the frequency of words in a given text file and prints the top N most frequent words.",
+    "reason": "This utility helps in understanding the most commonly used words in a document, which can be useful for text analysis and natural language processing tasks.",
+    "language": "shell",
+    "inputs": [
+      {
+        "name": "file",
+        "description": "Path to the text file to analyze.",
+        "example": "input.txt"
+      },
+      {
+        "name": "n",
+        "description": "The number of top frequent words to display (default is 5).",
+        "example": "10"
+      }
+    ],
+    "output": "Prints the top N most frequent words along with their frequency.",
+    "dependencies": [],
+    "topic": "text analysis"
+  },
+  "pipeline_version": 2,
+  "summary": "Analyzes the frequency of words in a given text file and prints the top N most frequent words.",
+  "reason": "This utility helps in understanding the most commonly used words in a document, which can be useful for text analysis and natural language processing tasks.",
+  "created": "2026-10-29T01:05:36-07:00",
+  "status": "checked",
+  "checks": [
+    {
+      "file": "main.sh",
+      "check": "Syntax/runtime",
+      "result": "not checked; isolated parser unavailable"
+    },
+    {
+      "file": "main.sh",
+      "check": "Placeholder / declared-input static checks",
+      "result": "passed"
+    }
+  ],
+  "execution": "not run",
+  "qa_status": "passed",
+  "qa_version": 2,
+  "qa_history": [
+    {
+      "round": 1,
+      "time": "2026-10-29T01:07:44-07:00",
+      "review": {
+        "verdict": "pass",
+        "assessment": "No concrete defect found in static review",
+        "issues": [],
+        "test_cases": [
+          {
+            "input": "sh main.sh input.txt 10",
+            "expected": "Top 10 most frequent words along with their frequency."
+          }
+        ],
+        "findings": []
+      },
+      "source_hashes": {
+        "main.sh": "c48a471462df31314e544d1a210379864bed2c24ee8547480c3ad79e6797feb2",
+        "README.md": "7ea5e269006c1be13b87de863417a7fe4e0eff0645ea619cbdc000954a6fc941",
+        ".gitignore": "eca3124445a4c1651e8f99aba353637a8752a6ce15ca7fd64d2fcfbd9c0b1ce7"
+      }
+    }
+  ],
+  "review": {
+    "verdict": "pass",
+    "assessment": "No concrete defect found in static review",
+    "issues": [],
+    "test_cases": [
+      {
+        "input": "sh main.sh input.txt 10",
+        "expected": "Top 10 most frequent words along with their frequency."
+      }
+    ],
+    "findings": []
+  },
+  "qa_reviewed_hashes": {
+    "main.sh": "c48a471462df31314e544d1a210379864bed2c24ee8547480c3ad79e6797feb2",
+    "README.md": "7ea5e269006c1be13b87de863417a7fe4e0eff0645ea619cbdc000954a6fc941",
+    ".gitignore": "eca3124445a4c1651e8f99aba353637a8752a6ce15ca7fd64d2fcfbd9c0b1ce7"
+  },
+  "files": [
+    ".gitignore",
+    "README.md",
+    "main.sh"
+  ],
+  "completed": "2026-10-29T01:07:44-07:00"
+}
