@@ -1,0 +1,53 @@
+# Paperclip private diagnostics and history
+STATUS.md
+_paperclip/
+_paperclip*
+_paperclip*/
+# Secrets, credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.token
+credentials*
+secrets*
+*secret*.json
+*service-account*.json
+config.local.*
+settings.local.*
+.ssh/
+.aws/
+# Personal data and local output
+private/
+personal/
+local_data/
+user_data/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+# Environments, packages, build products and caches
+.venv/
+venv/
+env/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+dist/
+build/
+coverage/
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.bak
